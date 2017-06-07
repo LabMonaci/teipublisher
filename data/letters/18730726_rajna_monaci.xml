@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Pio Rajna a Ernesto Monaci, 26 Luglio 1873</title>
+                <respStmt>
+                    <resp>Trascrizione</resp>
+                    <persName>Maria Teresa Rachetta</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Codifica</resp>
+                    <persName>Arianna Calcagnini</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Laboratorio Monaci 2016</publisher>
+                <pubPlace>Sapienza Università di Roma</pubPlace>
+                <date when="2016-12">dicembre 2016</date>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/" notBefore="2015-07-11">
+                        <p>I materiali originali (la lettera) appartiene alla Società Filologica Romana e
+                     è riprodotta qui con il necessario permesso.</p>
+                        <p>Questo documento (trascrizione e codifica) ha una licenza Creative Commons
+                     Attribution-NonCommercial-ShareAlike 4.0 International License.</p>
+                        <p> You are free to: <list>
+                                <item> Share — copy and redistribute the material in any medium or
+                           format</item>
+                                <item> Adapt — remix, transform, and build upon the material</item>
+                            </list>
+                        </p>
+                        <p> Under the following terms: <list>
+                                <item> Attribution — You must give appropriate credit, provide a link to the
+                           license, and indicate if changes were made. You may do so in any
+                           reasonable manner, but not in any way that suggests the licensor endorses
+                           you or your use.</item>
+                                <item> NonCommercial — You may not use the material for commercial
+                           purposes.</item>
+                                <item> ShareAlike — If you remix, transform, or build upon the material, you
+                           must distribute your contributions under the same license as the
+                           original.</item>
+                                <item> No additional restrictions — You may not apply legal terms or
+                           technological measures that legally restrict others from doing anything
+                           the license permits.</item>
+                            </list>
+                        </p>
+                        <p>La licenza è stata aggiunta a novembre 2016.</p>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Fondo Monaci, busta
+               n° 22. Società Filologica Romana. Dipartimento di Studi Europei, Americani e
+               Interculturali. Università Sapienza di Roma.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName ref="#PR">Pio Rajna</persName>
+                    <placeName ref="#milano">Milano</placeName>
+                    <date when="1873-07-26">26 Luglio 1873</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="#EM">Ernesto Monaci</persName>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <opener>
+                    <dateline>
+                        <placeName ref="#milano">Milano</placeName>, 
+                        <date when="1873-07-26">26 luglio 1873</date>
+                    </dateline>
+                    <salute>Mio Egregio Signore ed Amico,</salute>
+                </opener>
+                <p>Se non ho riscritto prima d'ora,voglia attribuirlo alle brighe degli esami, che per
+               quindici giorni assorbirono tutto il mio tempo. Oggi finalmente mi trovo libero e
+               penso con gran piacere ai due mesi e mezzo di cui posso disporre come più mi garba.
+               Soddisfo dunque al mio debito, e rispondo alla domanda che Ella mi mosse. Le parole
+               dell'articolo mio non alludono propriamente alla <title>Morte e alla Vendetta di
+                  Tristano</title>, ma sì ad altre scritture di vario genere che si contengono nel
+               codice ambrosiano. Peraltro già da un pezzo ho trascritto con intenzione di
+               pubblicarli anche quei due poemetti, che a mio giudizio furono toscani un tempo e
+               acquistarono forma settentrionale solo in grazia della trasmissione di bocca in
+               bocca, o piuttosto di manoscritto in manoscritto. Il mio pensiero sarebbe di
+               restituirli per quanto si possa alla loro condizione primitiva, stampando, se
+               apparirà opportuno, a fronte colla sostituzione, <pb/>anche il testo quale è recato dal
+               codice. Pubblicare questo solo non mi sembrerebbe convenevole; i versi sono
+               stroppiati troppo barbaramente perchè si possano dire leggibili. Del resto Ella saprà
+               che la maggior parte dei due poemetti venne già in luce nel secondo volume della
+                  <title>Tavola Rotonda</title> che il <persName ref="#FLP">Polidori</persName> curò per la
+                  <title>Collezione</title> bolognese di opere inedite e rare. Quel medesimo lavoro
+               di trasformazione a cui intendo sottoporre questi cantari ho già compiuto da anni per
+               un altro che trassi da un codice di proprietà privata per gentile concessione del
+               possessore. Da gran tempo avrebbe ad essere stampato e la prefazione era già pronta;
+               ma ora un impedimento, ora un altro mi costrinsero sempre a rimandare la cosa da un
+               mese all'altro. In fondo non ne sono malcontento, giacchè potrò così rimediare io
+               stesso ad una parte delle magagne. Tra poco invece potrà uscire un volume contenente
+               altre due narrazioni cavalleresche in ottava rima, che essendo tolte da codici
+               toscani non ebbero bisogno che di correzioni lievissime. Il testo è stampato; manca
+               ancora la prefazione. Le ho detto quali siano le mie intenzioni; ma fino a che un
+               proposito non è eseguito può sempre <pb/>accadere che si abbandoni o che si modifichi.
+               Intanto gradirei che a tutto Suo comodo Ella mi manifestasse una cosa di cui mi è
+               nato il sospetto: se cioè a Lei pure sia venuto il pensiero di ripubblicare la
+                  <title>Morte e la Vendetta</title>. Questa sarebbe già una causa più che
+               sufficiente perchè io non pensassi più a mandare ad effetto il mio disegno. Che le
+               bozze dell'articolo abbiano a tardare non importa; tra una decina di giorni io
+               lascierò forse <placeName ref="#milano">Milano</placeName>, ma naturalmente disporrò in modo che
+               le corrispondenze mi siano respinte regolarmente. Vado a
+               <placeName>Sondrio</placeName>, mio paese natale, per godere la montagna e la
+               compagnia di una parte dei miei parenti.</p>
+                <closer>
+                    <salute> La ringrazio dell'aver dato luogo in uno stesso numero e al testo e
+                  all'introduzione, e insieme la ringrazio del giudizio benevolo che Ella porta del
+                  lavoruccio. Certo sarò ben lieto che i lettori giudichio allo stesso modo; ma non
+                  posso rattenermi dal temere che essi siano per essere ben più severi. Mi creda
+                  colla più sincera stima ed amicizia Suo <abbr>de.mo</abbr>
+                    </salute>
+                    <signed>
+                        <persName ref="#PR">Pio Rajna</persName>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

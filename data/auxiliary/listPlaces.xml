@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Title</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Information about the source</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <listPlace>
+                    <place xml:id="roma">
+                        <placeName>Roma</placeName>
+                        <country>Italia</country>
+                        <location>
+                            <geo>41.902783, 12.496366</geo>
+                        </location>
+                    </place>
+                    <place xml:id="milano">
+                        <placeName>Milano</placeName>
+                        <country>Italia</country>
+                        <location>
+                            <geo>45.465422,9.185924</geo>
+                        </location>
+                    </place>
+                    <place xml:id="soriano">
+                        <placeName>Soriano nel Cimino</placeName>
+                        <country>Italia</country>
+                        <location>
+                            <geo>42.421940, 12.231905</geo>
+                        </location>
+                    </place>
+                    <place xml:id="wien">
+                        <placeName xml:lang="it">Vienna</placeName>
+                        <country xml:lang="it">Austria</country>
+                        <location>
+                            <geo>48.208174, 16.373819</geo>
+                        </location>
+                    </place>
+                    <place xml:id="torino">
+                        <placeName>Torino</placeName>
+                        <country>Italia</country>
+                        <location>
+                            <geo>45.070312, 7.686856</geo>
+                        </location>
+                    </place>
+                    <place xml:id="sondrio">
+                        <placeName>Sondrio</placeName>
+                        <country>Italia</country>
+                        <location>
+                            <geo>46.182264, 9.856982</geo>
+                        </location>
+                    </place>
+                    <place xml:id="oxford">
+                        <placeName>Oxford</placeName>
+                        <country xml:lang="it">Regno Unito</country>
+                        <location>
+                            <geo>51.752021, -1.257726</geo>
+                        </location>
+                    </place>
+                    <place xml:id="paris">
+                        <placeName xml:lang="it">Parigi</placeName>
+                        <country xml:lang="it">Francia</country>
+                        <location>
+                            <geo>48.856614, 2.352222</geo>
+                        </location>
+                    </place>
+                    <place xml:id="halle">
+                        <placeName>Halle an der Saale</placeName>
+                        <country xml:lang="it">Germania</country>
+                        <location>
+                            <geo>51.496980, 11.968803 </geo>
+                        </location>
+                    </place>
+                    <place xml:id="braunschweig">
+                        <placeName>Braunschweig</placeName>
+                        <country xml:lang="it">Germania</country>
+                        <location>
+                            <geo>52.268874, 10.526770 </geo>
+                        </location>
+                    </place>
+                    <place xml:id="avenay">
+                        <placeName>Avenay</placeName>
+                        <country xml:lang="it">Francia</country>
+                        <location>
+                            <geo> 49.101126, -0.459925 </geo>
+                        </location>
+                    </place>
+                    <place xml:id="vaticano">
+                        <placeName>Città del Vaticano</placeName>
+                        <country>Città del Vaticano</country>
+                        <location>
+                            <geo> 41.902916, 12.453389 </geo>
+                        </location>
+                    </place>
+                </listPlace>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p/>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>Laboratorio Monaci</description>
+    <website/>
+    <status/>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <target>labmonaci</target>
+    <prepare>pre-install.xql</prepare>
+    <finish>post-install.xql</finish>
+    <permissions user="labmonaci2017" group="tei" mode="rw-rw-r--"/>
+<deployed>2017-06-07T13:42:15.948+02:00</deployed>
+</meta>

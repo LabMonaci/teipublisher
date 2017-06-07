@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Title</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Information about the source</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson><!-- poi bisogna lasciare solo il <listPerson> e aggiungergli il namespace TEI --><!-- Per ognuno
+                    nome
+                    cognome
+                    nascita: data, luogo    Es. <birth when="1487">20 febbraio 1487, <placeName>Roma</placeName></birth>
+                    morte: data, luogo
+                    VIAF
+                    note: con link a biografia esterna o altro (optional)
+                    listBibl (optional)
+                    --><!-- forster
+                    bonghi
+                    guidi
+                    galeati
+                    cornu
+                    
+                    M. Clédat in 18751123_monaci_meyer.xml
+                    
+                    -->
+                    <person xml:id="GIA">
+                        <persName>
+                            <forename>Graziadio Isaia</forename>
+                            <surname>Ascoli</surname>
+                        </persName>
+                        <birth when="1829">16 luglio 1829, <placeName>Gorizia</placeName>
+                        </birth>
+                        <death when="1907">21 gennaio 1907, <placeName>Milano</placeName>
+                        </death>
+                    </person>
+                    <person xml:id="KB">
+                        <persName>
+                            <forename>Karl</forename>
+                            <surname>Bartsch</surname>
+                        </persName>
+                    </person>
+                    <person xml:id="UC">
+                        <persName>
+                            <forename>Ugo Angelo</forename>
+                            <surname>Canello</surname>
+                        </persName>
+                        <birth when="1848">21 giugno 1848, <placeName>Guia</placeName>
+                        </birth>
+                        <death when="1883">12 giugno 1883</death>
+                        <idno type="VIAF">32019016</idno>
+                    </person>
+                    <person xml:id="ADA">
+                        <persName>
+                            <forename>Alessandro</forename>
+                            <surname>D'Ancona</surname>
+                        </persName>
+                        <birth when="1835">20 febbraio 1835, <placeName>Pisa</placeName>
+                        </birth>
+                        <death when="1914">8 novembre 1914, <placeName>Firenze</placeName>
+                        </death>
+                        <idno type="VIAF">49316306</idno>
+                    </person>
+                    <person xml:id="FDO">
+                        <persName>
+                            <forename>Francesco</forename>
+                            <surname>D'Ovidio</surname>
+                        </persName>
+                    </person>
+                    <person xml:id="CDL">
+                        <persName>
+                            <forename>Cesare</forename>
+                            <surname>De Lollis</surname>
+                        </persName>
+                        <occupation from="1901" to="1903">Direttore degli <title ref="#SFR">Studj di
+                                filologia romanza</title>
+                        </occupation>
+                    </person>
+                    <person xml:id="LDML">
+                        <persName>
+                            <forename>Louis</forename>
+                            <surname>De Mas Latrie</surname>
+                        </persName>
+                        <birth when="1815">9 Aprile 1815, <placeName ref="#castelnaudary">Castelnaudary</placeName>
+                        </birth>
+                        <death when="1897">3 Gennaio 1897, <placeName ref="#parigi">Parigi</placeName>
+                        </death>
+                        <idno type="VIAF">19773406</idno>
+                    </person>
+                    <person xml:id="FDS">
+                        <persName>
+                            <forename>Francesco</forename>
+                            <surname>De Sanctis</surname>
+                        </persName>
+                    </person>
+                    <person xml:id="FD">
+                        <persName>
+                            <forename>Friedrich Christian</forename>
+                            <surname>Diez</surname>
+                        </persName>
+                        <birth when="1794">1794</birth>
+                        <death when="1876">1876</death>
+                    </person>
+                    <person xml:id="PG">
+                        <persName>
+                            <forename>Paolo</forename>
+                            <surname>Galeati</surname>
+                        </persName>
+                        <birth when="1830">8 gennaio 1830,
+                            <placeName>Imola</placeName>
+                        </birth>
+                        <death when="1903">1903,
+                            <placeName>Imola</placeName>
+                        </death>
+                        <idno type="VIAF">25406112 </idno>
+                    </person>
+                    <person xml:id="AG">
+                        <persName>
+                            <forename>Arturo</forename>
+                            <surname>Graf</surname>
+                        </persName>
+                        <birth when="1848">19 gennaio 1848, ad <placeName>Atene</placeName>
+                        </birth>
+                        <death when="1913">30-31 maggio 1913, a
+                            <placeName>Torino</placeName>
+                        </death>
+                        <note>Vd. Arturo Graf nell'Enciclopedia Online Treccani <ptr target="http://www.treccani.it/enciclopedia/arturo-graf/"/>
+                        </note><!--<listBibl>
+                            <bibl/>
+                        </listBibl>-->
+                    </person>
+                    <person xml:id="LM">
+                        <persName>
+                            <forename>Luigi</forename>
+                            <surname>Manzoni</surname>
+                        </persName>
+                    </person>
+                    <person xml:id="PM">
+                        <persName>
+                            <forename>Paul</forename>
+                            <surname>Meyer</surname>
+                        </persName>
+                        <birth when="1840">17 gennaio 1840, <placeName ref="#parigi">Parigi</placeName>
+                        </birth>
+                        <death when="1917">7 settembre 1917, <placeName ref="#parigi">Parigi</placeName>
+                        </death>
+                        <idno type="VIAF">44302645</idno>
+                    </person>
+                    <person xml:id="EM">
+                        <persName>
+                            <forename>Ernesto</forename>
+                            <surname>Monaci</surname>
+                        </persName>
+                        <birth when="1844">20 febbraio 1844, <placeName>Soriano nel
+                                Cimino</placeName>
+                        </birth>
+                        <death when="1918">1 maggio 1918, <placeName>Roma</placeName>
+                        </death>
+                        <idno type="VIAF">64080350</idno>
+                    </person>
+                    <person xml:id="AM">
+                        <persName>
+                            <forename>Adolfo</forename>
+                            <surname>Mussafia</surname>
+                        </persName>
+                        <birth when="1835">15 febbraio 1835, <placeName>Spalato</placeName>
+                        </birth>
+                        <death when="1905">7 giugno 1905, <placeName>Firenze</placeName>
+                        </death>
+                        <idno type="VIAF">22264311</idno>
+                    </person>
+                    <person xml:id="GP">
+                        <persName>
+                            <forename>Gaston</forename>
+                            <surname>Paris</surname>
+                        </persName>
+                        <birth when="1839">9 agosto 1839, <placeName>Avenay</placeName>
+                        </birth>
+                        <death when="1907">5 marzo 1903, <placeName>Cannes</placeName>
+                        </death>
+                        <idno type="VIAF">39382261  </idno>
+                    </person>
+                    <person xml:id="FLP">
+                        <persName>
+                            <forename>Filippo Luigi</forename>
+                            <surname>Polidori</surname>
+                        </persName>
+                        <birth when="1801">23 febbraio 1801, <placeName>Fano</placeName>
+                        </birth>
+                        <death when="1865">12 ottobre 1865, <placeName>Firenze</placeName>
+                        </death>
+                        <idno type="VIAF">30283259</idno>
+                    </person>
+                    <person xml:id="PR">
+                        <persName>
+                            <forename>Pio</forename>
+                            <surname>Rajna</surname>
+                        </persName>
+                        <birth when="1847">08 luglio 1847,
+                            <placeName>Sondrio</placeName>
+                        </birth>
+                        <death when="1930">25 novembre 1930,
+                            <placeName>Firenze</placeName>
+                        </death>
+                        <idno type="VIAF">73951899</idno>
+                    </person>
+                    <person xml:id="EMS">
+                        <persName key="VIAF-109421062">
+                            <forename>Edmund Max</forename>
+                            <surname>Stengel</surname>
+                        </persName>
+                        <birth when="1845">5 Aprile 1845, <placeName>Halle</placeName>
+                        </birth>
+                        <death when="1918">3 Novembre 1935, <placeName>Marburg</placeName>
+                        </death>
+                        <idno type="VIAF">109421062</idno>
+                    </person>
+                    <person xml:id="FAV">
+                        <persName>
+                            <forename>Francisco Adolfo</forename>
+                            <surname>Varnhagen</surname>
+                        </persName>
+                        <birth when="1816">17 febbraio 1816,
+                            <placeName>Iperò</placeName>
+                        </birth>
+                        <death when="1878">26 giugno 1878,
+                            <placeName>Vienna</placeName>
+                        </death>
+                        <idno type="VIAF">61560726</idno>
+                    </person>
+                    <person xml:id="FV"><!-- controllare! -->
+                        <persName>
+                            <forename>Friedrich</forename>
+                            <surname>Vieweg</surname>
+                        </persName>
+                        <birth when="1761">11 marzo 1761 <placeName ref="#halle">Halle an der Saale </placeName>
+                        </birth>
+                        <death when="1835">25 dicembre 1835 <placeName ref="#braunschweig"> Braunschweig </placeName>
+                        </death>
+                        <idno type="VIAF">37718184</idno><!-- 
+                    http://viaf.org/viaf/79219245/
+                    http://data.bnf.fr/15959082/f__vieweg/ -->
+                    </person>
+                    <listRelation>
+                        <relation name="maestro" active="#FD" passive="#EMS"/>
+                        <relation name="maestro" active="#FD" passive="#GP"/>
+                        <relation name="maestro" active="#FDS" passive="#ADA"/>
+                    </listRelation>
+                </listPerson>
+            </particDesc>
+        </profileDesc><!-- Fonti: Wikipedia, Treccani (Enciclopedia e Dizionario Biografico) -->
+    </teiHeader>
+    <text>
+        <body>
+            <p/>
+        </body>
+    </text>
+</TEI>
