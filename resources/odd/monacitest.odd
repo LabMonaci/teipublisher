@@ -41,7 +41,21 @@
                     </modelSequence>
                     <model output="web" behaviour="block"/>
                 </elementSpec>
-                
+                <elementSpec ident="bibl" mode="change">
+                    <model predicate="parent::listBibl" behaviour="listItem">
+                        <modelSequence predicate="parent::listBibl">   <!-- MODEL SEQUENCE ...  yuppie -->
+                            <model predicate="editor" behaviour="inline">
+                                <param name="content">editor</param>
+                                <outputRendition scope="before">content: '('</outputRendition>
+                                <outputRendition scope="after">content: ')'</outputRendition>
+                            </model>
+                            <model predicate="title" behaviour="inline">
+                                <outputRendition>font-style: italic</outputRendition>
+                            </model>
+                        </modelSequence>
+                    </model>  
+                    <model behaviour="inline"/>
+                </elementSpec>                
                 <!--<elementSpec ident="respStmt" mode="add">
                     <model behaviour="block">
                         <param name="content" value="concat(resp, ': ', string-join(persName, ', '))"/>
@@ -50,6 +64,15 @@
                 
                 <elementSpec ident="licence" mode="change">
                     <model predicate="$parameters?header='short'" behaviour="omit"/>
+                </elementSpec>
+                
+                <elementSpec ident="editor" mode="change">            <!-- MODELS ORDER MATTERS, forst for which predicate is true, it wins -->
+                    <model predicate="ancestor::bibl and following-sibling::editor" behaviour="inline">
+                        <outputRendition scope="after">content: ', '</outputRendition>
+                    </model>
+                    <model predicate="ancestor::bibl" behaviour="inline"/>
+                    <model predicate="ancestor::teiHeader" behaviour="omit"/>
+                    <model behaviour="inline"/>
                 </elementSpec>
                 
             </schemaSpec>

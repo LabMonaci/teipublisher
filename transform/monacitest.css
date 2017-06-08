@@ -11,6 +11,9 @@
 .tei-addrLine { white-space: nowrap; }
 .tei-argument { margin-bottom: 0.5em; }
 .tei-author1:before { content: 'By '; }
+.tei-bibl2:before { content: '(' }
+.tei-bibl2:after { content: ')' }
+.tei-bibl3 { font-style: italic }
 .tei-castList { list-style: ordered; }
 .tei-closer { margin-top: 1em; margin-left: 1em; margin-left: 1em; }
 .tei-code { font-family:monospace }
@@ -19,6 +22,7 @@
 .tei-del { text-decoration: line-through; }
 .tei-div1 { border: 1px solid black; padding: 5px; }
 .tei-docTitle { font-size: larger; }
+.tei-editor1:after { content: ', ' }
 .tei-email { font-family:monospace }
 .tei-figDesc:before { content: '[..'; }
 .tei-figDesc:after { content: '..]'; }

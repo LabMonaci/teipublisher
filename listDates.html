@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:i18n="http://exist-db.org/xquery/i18n" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <div data-template="templates:include" data-template-path="templates/menu.html"/>
+    <section class="container-fluid">
+      <header class="row">
+          <div class="col-md-12">
+              <div class="page-header">
+                    <h1>
+                        <i18n:text key="dates"/>
+                    </h1>
+              </div>
+          </div>
+      </header>
+
+        <section class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Date</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-12 col-lg-12">
+                            <div data-template="app:list-years"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="col-md-4" data-template="app:list-letters">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <i18n:text key="search-results">Results</i18n:text>
+                            <span data-template="app:letter-count"/>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-12" id="documents">
+                            <ul class="documents" data-template="browse:browse" data-template-per-page="20">
+                                <li>
+                                    <div data-template="browse:short-header"/>
+                                    <br class="clear"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+        </section>
+        
+
+    </section>
+</div>

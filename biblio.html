@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <div data-template="templates:include" data-template-path="templates/menu.html"/>
+    <section class="container-fluid">
+      <header class="row">
+<!--          <div class="col-md-12">-->
+<!--              <div class="page-header">-->
+<!--                  <h1 data-template="config:app-title"/>-->
+<!--              </div>-->
+<!--          </div>-->
+      </header>
+
+        <main xmlns:i18n="http://exist-db.org/xquery/i18n" class="row search">
+            <div class="col-md-3 col-md-push-9">
+                <form action="search.html" class="form form-horizontal">
+                    <div class="well well-sm">
+                        <div class="form-group">
+                            <div class="col-md-12 col-xs-12">
+                                <span class="input-group">
+                                    <input name="query" type="search" class="templates:form-control form-control typeahead-search" placeholder="Search For What?" autocomplete="off"/>
+                                    <span class="input-group-btn">
+                                        <button id="f-btn-search" type="submit" class="btn btn-primary">
+                                            <span class="material-icons">search</span>
+                                        </button>
+                                    </span>
+                                </span>
+                                <input type="hidden" name="field" value="text"/>
+                            </div>
+                        </div>
+                        <div class="form-group" data-toggle="tooltip" data-placement="left" title="i18n(search-part)">
+                            <div class="col-md-12 col-xs-12">
+                                <select name="tei-target" class="form-control" data-template="templates:form-control">
+                                    <option value="tei-text" selected="selected">
+                                        <i18n:text key="search-sections"/>
+                                    </option>
+                                    <option value="tei-head">
+                                        <i18n:text key="search-headings"/>
+                                    </option>
+                                    <option value="tei-person">
+                                        <i18n:text key="search-people"/>
+                                    </option>
+                                    <option value="tei-place">
+                                        <i18n:text key="search-place"/>
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            
+            <div class="col-md-6 col-md-pull-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Bibliografia</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-12 col-lg-12">
+                            <div data-template="app:list-bibl"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </main>
+    </section>
+</div>

@@ -79,9 +79,22 @@ declare function model:apply($config as map(*), $input as node()*) {
                     epub:block($config, ., ("tei-back"), .)
                 case element(bibl) return
                     if (parent::listBibl) then
-                        html:listItem($config, ., ("tei-bibl1"), .)
+                        html:listItem($config, ., ("tei-bibl1"), if (parent::listBibl) then
+    (
+        if (editor) then
+            html:inline($config, ., ("tei-bibl2"), editor)
+        else
+            (),
+        if (title) then
+            html:inline($config, ., ("tei-bibl3"), .)
+        else
+            ()
+    )
+
+else
+    $config?apply($config, ./node()))
                     else
-                        html:inline($config, ., ("tei-bibl2"), .)
+                        html:inline($config, ., ("tei-bibl4"), .)
                 case element(biblScope) return
                     html:inline($config, ., ("tei-biblScope"), .)
                 case element(body) return
@@ -173,10 +186,16 @@ declare function model:apply($config as map(*), $input as node()*) {
                 case element(docTitle) return
                     epub:block($config, ., css:get-rendition(., ("tei-docTitle")), .)
                 case element(editor) return
-                    if (ancestor::teiHeader) then
-                        html:omit($config, ., ("tei-editor1"), .)
+                    if (ancestor::bibl and following-sibling::editor) then
+                        html:inline($config, ., ("tei-editor1"), .)
                     else
-                        html:inline($config, ., ("tei-editor2"), .)
+                        if (ancestor::bibl) then
+                            html:inline($config, ., ("tei-editor2"), .)
+                        else
+                            if (ancestor::teiHeader) then
+                                html:omit($config, ., ("tei-editor3"), .)
+                            else
+                                html:inline($config, ., ("tei-editor4"), .)
                 case element(email) return
                     html:inline($config, ., ("tei-email"), .)
                 case element(epigraph) return

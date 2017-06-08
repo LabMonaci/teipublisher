@@ -77,9 +77,22 @@ declare function model:apply($config as map(*), $input as node()*) {
                     fo:block($config, ., ("tei-back"), .)
                 case element(bibl) return
                     if (parent::listBibl) then
-                        fo:listItem($config, ., ("tei-bibl1"), .)
+                        fo:listItem($config, ., ("tei-bibl1"), if (parent::listBibl) then
+    (
+        if (editor) then
+            fo:inline($config, ., ("tei-bibl2"), editor)
+        else
+            (),
+        if (title) then
+            fo:inline($config, ., ("tei-bibl3"), .)
+        else
+            ()
+    )
+
+else
+    $config?apply($config, ./node()))
                     else
-                        fo:inline($config, ., ("tei-bibl2"), .)
+                        fo:inline($config, ., ("tei-bibl4"), .)
                 case element(biblScope) return
                     fo:inline($config, ., ("tei-biblScope"), .)
                 case element(body) return
@@ -174,10 +187,16 @@ declare function model:apply($config as map(*), $input as node()*) {
                 case element(docTitle) return
                     fo:block($config, ., css:get-rendition(., ("tei-docTitle")), .)
                 case element(editor) return
-                    if (ancestor::teiHeader) then
-                        fo:omit($config, ., ("tei-editor1"), .)
+                    if (ancestor::bibl and following-sibling::editor) then
+                        fo:inline($config, ., ("tei-editor1"), .)
                     else
-                        fo:inline($config, ., ("tei-editor2"), .)
+                        if (ancestor::bibl) then
+                            fo:inline($config, ., ("tei-editor2"), .)
+                        else
+                            if (ancestor::teiHeader) then
+                                fo:omit($config, ., ("tei-editor3"), .)
+                            else
+                                fo:inline($config, ., ("tei-editor4"), .)
                 case element(email) return
                     fo:inline($config, ., ("tei-email"), .)
                 case element(epigraph) return

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listBibl><!-- Bibliografia completa di Monaci è nel volume del 1920 della Società filologica romana -->
+                <listBibl><!-- Rivista di Filologia Romanza, senza indicazioni di volume né di fascicolo -->
+                    <bibl xml:id="RFR">
+                        <title level="j">Rivista di Filologia Romanza</title>
+                        <editor>
+                            <persName ref="#EM">Ernesto Monaci</persName>
+                        </editor>  <!-- eliminare spazi tra editor e persName -->
+                        <editor>
+                            <persName ref="#EMS">Edmund Stengel</persName>
+                        </editor>
+                        <editor>
+                            <persName ref="#LM">Luigi Manzoni</persName>
+                        </editor>
+                        <publisher>P. Galeati</publisher>
+                        <pubPlace>Imola</pubPlace>
+                        <date from="1872" to="1876">Dal 1872 al 1876</date>
+                    </bibl><!-- primo volume e primo fascicolo della rivista -->
+                    <bibl xml:id="RFR1-1">
+                        <title level="j">Rivista di Filologia Romanza</title>
+                        <date>1872</date>
+                        <biblScope unit="volume">1</biblScope>
+                        <biblScope unit="issue">1</biblScope>
+                    </bibl><!-- primo volume e secondo fascicolo della rivista -->
+                    <bibl xml:id="RFR1-2">
+                        <title level="j">Rivista di Filologia Romanza</title>
+                        <date>1874</date><!-- check data! -->
+                        <biblScope unit="volume">1</biblScope>
+                        <biblScope unit="issue">2</biblScope>
+                    </bibl><!-- secondo volume della rivista (chiamato anche terzo fascicolo) -->
+                    <bibl xml:id="RFR2">
+                        <title level="j">Rivista di Filologia Romanza</title>
+                        <date>1875</date>
+                        <biblScope unit="volume">2</biblScope>
+                    </bibl><!-- Romania, senza indicazioni di volume né di fascicolo -->
+                    <bibl xml:id="ROM">
+                        <title level="j">Romania</title>
+                        <editor>
+                            <persName ref="#GP">Gaston Paris</persName>
+                        </editor>
+                        <editor>
+                            <persName ref="#PM">Paul Meyer</persName>
+                        </editor>
+                    </bibl><!-- evoluzione della rivista -->
+                    <bibl xml:id="GFR">
+                        <title level="m">Giornale di filologia romanza</title>
+                        <editor>
+                            <persName ref="#EM">Ernesto Monaci</persName>
+                        </editor>
+                        <date from="1876" to="1883">Dal 1876 al 1883</date>
+                    </bibl>
+                    <bibl xml:id="SFR">
+                        <title level="m">Studj di filologia romanza</title>
+                        <editor>
+                            <persName ref="#EM">Ernesto Monaci</persName>
+                        </editor>
+                        <editor>
+                            <persName ref="#CDL">Cesare de Lollis</persName>
+                            <date from="1901" to="1903">Dal 1901 al 1903</date>
+                        </editor>
+                        <date from="1885" to="1903">Dal 1885 al 1903</date>
+                    </bibl>
+                    <bibl xml:id="SR">
+                        <title level="m">Studj romanzi</title>
+                        <editor>
+                            <persName ref="#EM">Ernesto Monaci</persName>
+                        </editor>
+                        <date from="1903">Dal 1903</date>
+                    </bibl>
+                </listBibl>
+            </listBibl>
+        </body>
+    </text>
+</TEI>

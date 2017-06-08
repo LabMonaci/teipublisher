@@ -21,6 +21,9 @@
     <msg key="logout">Logout</msg>
     <msg key="user">User</msg>
     <msg key="password">Password</msg>
+    <msg key="people">People</msg>
+    <msg key="places">Places</msg>
+    <msg key="dates">Dates</msg>
     <msg key="search-people">Search People</msg>
     <msg key="search-places">Search Places</msg>
     <msg key="search-sections">Search Sections</msg>
@@ -54,5 +57,7 @@
     <msg key="examples">Examples</msg>
     <msg key="odd-data">ODD Files</msg>
     <msg key="create">Create</msg>
-    <msg key="list">Indexes</msg>
+    <msg key="list">Indici</msg>
+    <msg key="letters">Lettere</msg>
+    <msg key="biblio">Bibliografia</msg>
 </catalogue>

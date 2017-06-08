@@ -5,6 +5,7 @@ module namespace app="teipublisher.com/app";
 
 import module namespace templates="http://exist-db.org/xquery/templates";
 import module namespace config="http://www.tei-c.org/tei-simple/config" at "config.xqm";
+import module namespace pm-config="http://www.tei-c.org/tei-simple/pm-config" at "pm-config.xql";
 
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 
@@ -53,9 +54,26 @@ declare function app:alt-list($node as node(), $model as map(*)) {
         return
             <table class="col-md-12 table">
                 {for $person in $people
-                    return <tr><td>
-                                {$person/tei:persName/tei:surname/text() || ', ' || $person/tei:persName/tei:forename/text() || " (" || $person/tei:birth/@when  || "-" || $person/tei:death/@when ||")"}
-                            </td></tr>
+                    return <tr>
+                                <td>
+                                    <a>
+                                        {attribute href {'list.html?person-id=' || $person/@xml:id}}
+                                    {$person/tei:persName/tei:surname/text() || ', ' || $person/tei:persName/tei:forename/text() || " (" || $person/tei:birth/@when  || "-" || $person/tei:death/@when ||")"}
+                                    </a>
+                                    <br/>
+                                    <span style="margin-left:25pt">
+                                    <a>
+                                        {attribute href {$person/tei:idno[@type='VIAF']}}
+                                        VIAF
+                                    </a> 
+                                    | 
+                                    <a>
+                                        {attribute href {$person/tei:idno[@type='Treccani']}}
+                                        Treccani
+                                    </a>
+                                    </span>
+                                </td>
+                            </tr>
                 }
             </table>
 };
@@ -71,6 +89,42 @@ declare function app:list-places($node as node(), $model as map(*)) {
 };
 
 
+declare function app:list-bibl($node as node(), $model as map(*)) {
+    let $listBibl := collection($config:auxiliary-root)//tei:bibl  (: this is defined in config.xqm :)
+        return
+            for $bibl in $listBibl
+                 let $title :=$bibl/tei:title/string()
+                 order by $title
+                    return $pm-config:web-transform($bibl, (), ())   (: it calls the procesing model on the node; in the empty in u can call another odd or other parameters :)
+                
+};
+
+declare function app:list-years($node as node(), $model as map(*)) {
+    <table class="col-md-12 table">
+    {
+        for $year in distinct-values(collection($config:data-root)//tei:correspAction[@type='sent']/tei:date/substring(@when, 1, 4))
+        order by $year
+            return
+            <tr><td>{$year}</td></tr>  (: in che ordine? :)
+    }        
+    </table>
+};
+
+
+declare                (: the display is in the html :)
+    %templates:wrap
+function app:list-letters($node as node(), $model as map(*), $person-id as xs:string?) {    (: parameter is optional with the ? :)
+    let $letters := collection($config:data-root)//tei:persName[@ref=concat('#', $person-id)]/ancestor::tei:TEI
+    
+    return  map {
+            "all" : $letters,
+            "mode": "browse"
+        }
+};
+
+declare function app:letter-count($node as node(), $model as map(*)) {
+    count($model('all'))    (: this is the same as $model?people  :)
+};
 
 declare
     %templates:wrap
@@ -84,6 +138,7 @@ function app:list-people($node as node(), $model as map(*)) {
 declare function app:person-count($node as node(), $model as map(*)) {
     count($model('people'))    (: this is the same as $model?people  :)
 };
+
 
 declare 
     %templates:wrap

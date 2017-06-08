@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:i18n="http://exist-db.org/xquery/i18n" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <div data-template="templates:include" data-template-path="templates/menu.html"/>
+    <section class="container-fluid">
+      <header class="row">
+          <div class="col-md-12">
+              <div class="page-header">
+                  <h1 data-template="config:app-title"/>
+              </div>
+          </div>
+      </header>
+
+        <section class="row">  <!-- it was main -->
+            
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <i18n:text key="person-index">Indice delle persone</i18n:text>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-12 col-lg-12">
+                            <div data-template="app:alt-list"/>
+                        </div>
+                        <!--
+                        <div data-template="app:list-people">
+                            <p class="main-content">
+                                <i18n:text key="found">Found</i18n:text>: <span id="hit-count" data-template="app:person-count"/>
+                            </p>
+                            <table class="col-md-12 table">
+                                <tbody>
+                                 <tr data-template="templates:each" data-template-from="people" data-template-to="person">   Same structure as: for person in people 
+                                  <td data-template="app:show-person"/>
+                                </tr>
+                                </tbody>  
+                            </table>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4" data-template="app:list-letters">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <i18n:text key="search-results">Results</i18n:text>
+                            <span data-template="app:letter-count"/>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-12" id="documents">
+                            <ul class="documents" data-template="browse:browse" data-template-per-page="20">
+                                <li>
+                                    <div data-template="browse:short-header"/>
+                                    <br class="clear"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+        </section>
+        
+        <section class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Date</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-12 col-lg-12">
+                            <div data-template="app:list-years"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="row">
+              <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <i18n:text key="place-index">Indice dei luoghi</i18n:text>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-12 col-lg-12">
+                            <div data-template="app:list-places"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  </section>
+        
+    </section>
+</div>

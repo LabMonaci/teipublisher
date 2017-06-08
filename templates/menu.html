@@ -1,27 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nav xmlns:i18n="http://exist-db.org/xquery/i18n" class="navbar navbar-default navbar-fixed-top" role="navigation" data-template="i18n:translate" data-catalogues="resources/i18n">
     <div class="container-fluid" data-template="browse:fix-links">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"/>
-                <span class="icon-bar"/>
-                <span class="icon-bar"/>
-            </button>
-            <a class="navbar-brand" href="$app/works/">
-                <span data-template="config:app-title">App Title</span>
-            </a>
-        </div>
         <div class="navbar-collapse collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li id="home">
-                    <a href="$app/works/">
+                    <a href="index.html">  <!-- was $app/works/ -->
+                        <b>Lab Monaci</b>
+                    </a>
+                </li>
+                <li id="home">
+                    <a href="index.html">  <!-- was $app/works/ -->
                         <i18n:text key="home"/>
                     </a>
                 </li>
-                <li id="list">
-                    <a href="list.html">
+                <li id="letters">
+                    <a href="$app/works/">
+                        <i18n:text key="letters"/>
+                    </a>
+                </li>
+                <li id="list" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
                         <i18n:text key="list"/>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="listPeople.html">
+                                <i18n:text key="people"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="listPlaces.html">
+                                <i18n:text key="places"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="listDates.html">
+                                <i18n:text key="dates"/>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="biblio">
+                    <a href="biblio.html">
+                        <i18n:text key="biblio"/>
                     </a>
                 </li>
                 <li class="dropdown" data-template="browse:show-for-document">
