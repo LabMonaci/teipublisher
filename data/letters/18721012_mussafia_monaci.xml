@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Adolfo Mussafia a Ernesto Monaci, 12 ottobre 1872</title>
+                <respStmt>
+                    <resp>Trascrizione</resp>
+                    <persName>Marco Veneziale</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Codifica</resp>
+                    <persName>Marta Carpiceci</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Laboratorio Monaci 2016</publisher>
+                <pubPlace>Sapienza Università di Roma</pubPlace>
+                <date when="2016-11">novembre 2016</date>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/" notBefore="2015-07-11">
+                        <p>I materiali originali (la lettera) appartiene alla Società Filologica Romana e
+                     è riprodotta qui con il necessario permesso.</p>
+                        <p>Questo documento (trascrizione e codifica) ha una licenza Creative Commons
+                     Attribution-NonCommercial-ShareAlike 4.0 International License.</p>
+                        <p> You are free to: <list>
+                                <item> Share — copy and redistribute the material in any medium or
+                           format</item>
+                                <item> Adapt — remix, transform, and build upon the material</item>
+                            </list>
+                        </p>
+                        <p> Under the following terms: <list>
+                                <item> Attribution — You must give appropriate credit, provide a link to the
+                           license, and indicate if changes were made. You may do so in any
+                           reasonable manner, but not in any way that suggests the licensor endorses
+                           you or your use.</item>
+                                <item> NonCommercial — You may not use the material for commercial
+                           purposes.</item>
+                                <item> ShareAlike — If you remix, transform, or build upon the material, you
+                           must distribute your contributions under the same license as the
+                           original.</item>
+                                <item> No additional restrictions — You may not apply legal terms or
+                           technological measures that legally restrict others from doing anything
+                           the license permits.</item>
+                            </list>
+                        </p>
+                        <p>La licenza è stata aggiunta a novembre 2016.</p>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Lettera di Adolfo Mussafia a Ernesto Monaci del 12 ottobre 1872. Fondo Monaci. Società Filologica Romana. Dipartimento di Studi Europei, Americani e
+               Interculturali. Università Sapienza di Roma.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName ref="#AM">Adolfo Mussafia</persName>
+                    <placeName ref="#wien">Vienna</placeName>
+                    <date when="1872-10-12">12 Ottobre 1872</date>
+                </correspAction>
+                <correspAction type="recived">
+                    <persName ref="#EM">Ernesto Monaci</persName>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <opener>
+                    <salute>Pregiatissimo <persName ref="#EM">Sig<hi rend="sup">r</hi>
+                     Monaci</persName>
+                    </salute>
+                </opener>
+                <p>Le rendo grazie sincere dell'avermi inviato <title ref="#RFR1-1">il primo fascicolo della <hi rend="underlined">Rivista</hi>
+                    </title>. Mi farà piacere d'indicarmi a
+               chi io debba <unclear>rivolgermi</unclear> per avere l'importo della prima annata, ed a quanto
+               esso ammonti. – Il periodico comincia bene; e me ne congratulo di cuore con lor
+               signori. - L'articolo primo del <persName ref="#UC">S<hi rend="sup">r</hi>
+                  Canello</persName> sembrami fatto un po' in fretta, e può dar luogo a molte
+               rettificazioni. Io ci ho scritto sopra qualche pagina. Mi dica sinceramente;
+               preferisce che le pubblichi in altro periodico o che le mandi
+                  alla <title ref="#RFR">Rivista</title>? Altrove sarebbe come una relazione sulla
+               <title ref="#RFR">
+                        <choice>
+                            <abbr>Riv</abbr>
+                            <expan>Rivista</expan>
+                        </choice>
+                    </title>, che si soffermasse particolarmente su d'un articolo; nella
+                  <title ref="#RFR">
+                        <choice>
+                            <abbr>Riv</abbr>
+                            <expan>Rivista</expan>
+                        </choice>
+                    </title> acquisterebbe più facilmente un carattere polemico,
+               che io vorrei evitare. Dall'altro lato potrebbe sembrare utile che le varie opinioni
+               emerse su un dato punto di grammatica si trovino riunite nello stesso volume.
+               Insomma, stabilisca Lei e il <persName ref="#UC">Sig.<hi rend="sup">r</hi>
+                  Canello</persName>; e due partiti proposti ne aggiungono il terzo, che io laceri le
+               poche pagine scritte; e farò volentieri anche questo. Le sarei molto grato, se le
+               riuscisse darmi qualche appunto da <choice>
+                        <abbr>bibl</abbr>
+                        <expan>biblioteca</expan>
+                    </choice> romana di
+               leggende (particolarmente in versi) su S. Caterina, S. Margherita, S. Cristoforo. Mi
+               riverisca i suoi colleghi; esprima le mie congratulazioni allo
+                  <persName ref="#EMS">Stengel</persName> della buona ventura ch'egli fa, e dell'eccellente
+               modo con cui fu <unclear>gratificato</unclear>. E mi creda sempre</p>
+                <closer>
+                    <salute>Suo dev.<hi rend="sup">o</hi>
+                    </salute>
+                    <signed>
+                        <persName ref="#AM">A Mussafia</persName>
+                    </signed>
+                    <placeName ref="#wien">Vienna</placeName>
+                    <dateline>
+                        <date when="1872-10-12">12 <abbr>Oct</abbr> 1872</date>
+                    </dateline>
+                </closer>
+                <postscript rend="verticale">
+                    <p>Se il <persName ref="#UC">S<hi rend="sup">r</hi> Canello</persName> sapesse
+                  di quanta utilità mi potrebbe essere il materiale da lui raccolto nel suo saggio
+                  sul <choice>
+                            <abbr>dial Trivig</abbr>
+                            <expan>dialetto Trivigiano</expan>
+                        </choice>, vincerebbe la soverchia modestia e me lo farebbe
+                  conoscere anche nella 1<hi rend="sup">a</hi> edizione, quando pure questa non lo
+                  sodisfaccia.</p>
+                </postscript>
+            </div>
+        </body>
+    </text>
+</TEI>

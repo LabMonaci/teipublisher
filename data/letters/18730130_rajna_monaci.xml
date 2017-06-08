@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Pio Rajna a Ernesto Monaci, 30 gennaio 1873</title>
+                <respStmt>
+                    <resp>Trascrizione</resp>
+                    <persName>Maria Teresa Rachetta</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Codifica</resp>
+                    <persName>Martina D'Arcangelo</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Laboratorio Monaci 2016</publisher>
+                <pubPlace>Sapienza Università di Roma</pubPlace>
+                <date when="2017-01">Gennaio 2017</date>
+                <availability>
+                    <licence>target="http://creativecommons.org/licenses/by-nc-sa/4.0/"notBefore="2015-07-11"
+                     <p>I materiali originali (la lettera) appartiene alla Società Filologica Romana
+                     e è riprodotta qui con il necessario permesso.</p>
+                        <p>Questo documento (trascrizione e codifica) ha una licenza Creative Commons
+                     Attribution-NonCommercial-ShareAlike 4.0 International License.</p>
+                        <p> You are free to: <list>
+                                <item>Share — copy and redistribute the material in any medium or
+                           format</item>
+                                <item>Adapt — remix, transform, and build upon the material</item>
+                            </list>
+                        </p>
+                        <p> Under the following terms: <list>
+                                <item>Attribution — You must give appropriate credit, provide a link to the
+                           license, and indicate if changes were made. You may do so in any
+                           reasonable manner, but not in any way that suggests the licensor endorses
+                           you or your use.</item>
+                                <item>NonCommercial — You may not use the material for commercial
+                           purposes.</item>
+                                <item>ShareAlike — If you remix, transform, or build upon the material, you
+                           must distribute your contributions under the same license as the
+                           original.</item>
+                                <item>No additional restrictions — You may not apply legal terms or
+                           technological measures that legally restrict others from doing anything
+                           the license permits.</item>
+                            </list>
+                        </p>
+                        <p>La licenza è stata aggiunta a novembre 2016.</p>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Lettera di Pio Rajna a Ernesto Monaci del 30 gennaio 1873. Fondo Monaci, busta n°22.
+               Società Filologica Romana. Dipartimento di Studi Europei, Americani e Interculturali.
+               Università Sapienza di Roma</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName ref="#PR">Pio Rajna</persName>
+                    <placeName ref="#milano">Milano</placeName>
+                    <date when="1873-01-30">30 gennaio 1873</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="#EM">Erneto Monaci</persName>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <opener>
+                    <dateline>
+                        <placeName>Milano</placeName>, 
+                        <date when="1873-01-30">30 gennaio 1873</date>
+                    </dateline>
+                    <salute>Mio riverito Signore,</salute>
+                </opener>
+                <p>La Sua gentilezza le fa pensare che io abbia dovuto meravigliarmi non mi vedendo
+               invitato a scrivere per la <title ref="#RFR">Rivista</title>; ma davvero io dovrei pure ad
+               essere presuntuoso se stimassi necessario il mio aiuto in un'intrapresa qualsivaglia.
+               Non mi sono dunque meravigliato, né ella ha bisogno alcuno alcuno di giustificazioni;
+               piuttosto è mio dovere ringraziarla della sua lettera e delle molte garbatezze che vi
+               si contengono. Dirle che mi riuscì cara, è dir cosa che anche da sé stessa si
+               intende, poiché ognuno che onestamente coltiva uno studio cura non poco di poter
+               stringere legami con quanti lavorano nel medesimo campo. Appena mi sia possibile
+               cercherò di mandare qualche cosuccia per il <orgName>giornale</orgName>, che mi
+               rallegro di veder bene avviato, a al quale auguro ogni fortuna. Né questa gli può
+               mancare, affidato com'è ad ottime mani, che certo non risparmieranno fatica per far
+               sì che esso cresca onore all'<placeName ref="#italia">Italia</placeName> presso gli
+               stranieri che si occupano dei medesimi studii. Che dei miei <title/> non venga subito in
+               luce un giudizio, non mi può certo spiacere; anche in questo vedo una prova manifesta
+               della serietà di propositi colla quale Ella e i colleghi Suoi si sono convinti a
+               un'impresa né leggiera né facile. Non so s'io mi inganni, ma io temo che una delle
+               cagioni che ritardano in <placeName ref="#italia">Italia</placeName> il progredire
+               degli Studi s'abbia a cercare nella mancanza di una critica diretta unicamente al
+               bene della scienza, la quale si faccia da tutti rispettare, e in primo luogo dagli
+               autori stessi, quand'anche si trovino sferzati.</p>
+                <closer>
+                    <salute>Di nuovo ringraziandola, mi dico con simpatia Suo <choice>
+                            <abbr>dev.mo</abbr>
+                            <expan>devotissimo</expan>
+                        </choice>
+                    </salute>
+                    <signed>
+                        <persName ref="#PR">Pio Rajna</persName>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

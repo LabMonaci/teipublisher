@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Giuseppe Pitrè a Luigi Manzoni, 29 dicembre 1872</title>
+                <respStmt>
+                    <resp>Trascrizione</resp>
+                    <persName>Mariateresa Prota</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Codifica</resp>
+                    <persName>Mariateresa Prota</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Laboratorio Monaci 2017</publisher>
+                <pubPlace>Sapienza Università di Roma</pubPlace>
+                <date when="2017-01">gennaio 2017</date>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/" notBefore="2015-07-11">
+                        <p>Il materiale originale (la lettera) appartiene alla Società Filologica
+                     Romana e è riprodotta qui con il necessario permesso.</p>
+                        <p>Questo documento (trascrizione e codifica) ha una licenza Creative
+                     Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                     License.</p>
+                        <p> You are free to: <list>
+                                <item> Share — copy and redistribute the material in any medium or
+                        format</item>
+                                <item> Adapt — remix, transform, and build upon the material</item>
+                            </list>
+                        </p>
+                        <p> Under the following terms: <list>
+                                <item> Attribution — You must give appropriate credit, provide a
+                        link to the license, and indicate if changes were made. You may
+                        do so in any reasonable manner, but not in any way that suggests
+                        the licensor endorses you or your use.</item>
+                                <item> NonCommercial — You may not use the material for commercial
+                        purposes.</item>
+                                <item> ShareAlike — If you remix, transform, or build upon the
+                        material, you must distribute your contributions under the same
+                        license as the original.</item>
+                                <item> No additional restrictions — You may not apply legal terms or
+                        technological measures that legally restrict others from doing
+                        anything the license permits.</item>
+                            </list>
+                        </p>
+                        <p>La licenza è stata aggiunta a novembre 2016.</p>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Lettera di Giuseppe Pitrè a Luigi Manzoni del 29 dicembre 1872. Fondo Monaci, busta n° 21. Società Filologica Romana. Dipartimento di Studi Europei, Americani e Interculturali. Università Sapienza di Roma</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName ref="#GPI">Giuseppe Pitrè</persName>
+                    <placeName>Palermo</placeName>
+                    <date when="1872-12-29">29 dicembre 1872</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="#LM">Luigi Manzoni</persName>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div><!-- attenzione a quote -->
+                <opener>
+                    <salute>
+                        <choice>
+                            <abbr>Ch.mo</abbr>
+                            <expan>Chiarissimo</expan>
+                        </choice> Signore</salute>
+                </opener>
+                <p>Le scrivo pochi versi per augurarle tante cose pel nuovo anno che stiamo per incominciare e per dirle che avendo veduto nella <orgName>Biblioteca comunale</orgName> di qua un primo fasc. della <title>Rivista di filologia romanza</title> ove sono annunziate in preparazione alcune <title>Tradizioni popolari</title> da essere pubblicate da me, desidero sapere se esse tradizioni (<title>Novelle e fiabe popolari siciliane</title> differenti dalle quattro già edite che Le ho mandate) Le abbisognino pel prossimo 2° fascicolo.</p>
+                <p>Vorrei poi pregarla di due favori: il primo, che Vs mi ringrazii il prof. <persName>
+                        <surname>Monaci</surname>
+                    </persName> del buon ricordo che ha fatto di me e dell’opera santa di affratellamento che ei propone per tutti i cultori degli studi filologici in tutte le provincie; talché mi è venuto più volte di esclamare: «Benedetto questo professore! che c’insegna a conoscerci l’un l’altro, ad amarci, a stringerci la mano!». L’altro favore è che Vs. gradisca l’attestato della mia sincera stima e le congratulazioni che Le fo per l’ottimo (dico 
+                    <hi rend="sottolineato">ottimo</hi>) cominciamento del suo giornale.
+            </p>
+                <closer>
+                    <salute>E con questo La saluto cordialmente, e me Le offro di cuore</salute>
+                    <dateline>
+                        <placeName>Palermo</placeName>, 
+                        <date when="1872-12-29">29 <choice>
+                                <abbr>dic.</abbr>
+                                <expan>dicembre</expan>
+                            </choice> 72.</date>
+                    </dateline>
+                    <salute>
+                        <choice>
+                            <abbr>Devmo</abbr>
+                            <expan>Devotissimo</expan>
+                        </choice> e 
+                        <choice>
+                            <abbr>affmo</abbr>
+                            <expan>affezionatissimo</expan>
+                        </choice>
+                    </salute>
+                    <signed>
+                        <persName ref="#GPI">G. Pitrè</persName>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>
